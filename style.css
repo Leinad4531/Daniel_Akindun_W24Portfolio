@@ -1,0 +1,616 @@
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* General Section Enhancements */
+/* Section General Styling */
+section {
+    padding: 60px 0;
+    background: #fff; /* Light background for readability */
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2.5rem;
+    color: #007bff; /* Theme color for titles */
+    margin-bottom: 30px; /* Spacing below the section title */
+    text-align: center; /* Center-align titles */
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Transparent Navbar */
+.navbar {
+    background-color: transparent !important; /* Ensures navbar has no background */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    transition: background-color 0.5s ease; /* Smooth transition for scrolling effect */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #ffffff; /* Brighter white for better readability on hover/focus */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Adjust header to ensure it's not hidden beneath the navbar */
+.header, .bg-image {
+    padding-top: 80px; /* Adjust this value based on the actual navbar height */
+    background-image: url('img/portfolio1.jpg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 100vh; /* Full height */
+}
+
+.header h1,
+.header p {
+    z-index: 2;
+    position: relative;
+    padding: 0 15px;
+}
+
+/* Bio Section Enhancements */
+#bio {
+    background-color: #f8f9fa; /* Light background to offset from the header */
+    padding: 60px 0; /* Ample padding for breathing space */
+}
+
+#bio .row {
+    align-items: center; /* Ensures the image and text are aligned at their vertical center */
+}
+
+#bio img {
+    border-radius: 50%; /* Circular image for a modern look */
+    margin-bottom: 20px; /* Space between image and text on smaller screens */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 4px solid #007bff; /* Border color matching the navbar highlight for consistency */
+}
+
+#bio h2 {
+    color: #007bff; /* Title color to match the portfolio's theme */
+    font-weight: 700; /* More pronounced font weight for the section title */
+    margin-bottom: 20px; /* Space between title and paragraph */
+}
+
+#bio p {
+    font-size: 1.1rem; /* Slightly larger paragraph font size for readability */
+    color: #333; /* Darker text for contrast against the light background */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Section Content Wrapper */
+.section-content {
+    max-width: 960px; /* Or your preferred max width */
+    margin: auto; /* Centers the content */
+    padding: 20px; /* Adds some padding inside the content area */
+    text-align: left; /* Aligns text to the left within the centered content block */
+}
+
+/* Enhanced Section Styling */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; /* Increased padding for a more spacious look */
+    background: #fff; /* Ensures a light, clean background */
+}
+
+/* Adjustments to Headings and Paragraphs for a Premium Look */
+section h2, section p {
+    margin: 0 0 20px; /* Adjust spacing as needed */
+}
+
+/*section h2 {*/
+/*    font-size: 2.2rem; !* Large, prominent headings *!*/
+/*    margin-bottom: 0.5rem; !* Tightens spacing between heading and content *!*/
+/*}*/
+
+section p {
+    font-size: 1.1rem; /* Ensures text is neither too small nor too large */
+    color: #333; /* Darker text for improved readability */
+}
+
+/* Link Styling for Clarity and Emphasis */
+section a {
+    color: #007bff; /* Eye-catching link color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+section a:hover {
+    color: #0056b3; /* Darker shade on hover for depth */
+    text-decoration: underline; /* Underline to signify clickable links */
+}
+
+
+/* Philosophy Section Styling */
+#philosophy {
+    background-color: #f8f9fa; /* Soft background color for contrast */
+    padding: 60px; /* Ample padding for breathing space */
+    border-radius: 8px; /* Soft rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space before the next section */
+}
+
+#philosophy h2 {
+    color: #007bff; /* Heading color that stands out */
+    margin-bottom: 20px; /* Space between heading and text */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+#philosophy p {
+    font-size: 1.1rem; /* Comfortable reading size */
+    line-height: 1.7; /* Adequate line spacing for readability */
+    color: #333; /* Darker text for contrast against the background */
+}
+
+/* Title Styling for Academic Credentials */
+
+#academicCredentials {
+    background: #f5f5f5; /* Light background for contrast */
+    padding: 100px 0; /* Increased padding for a spacious look */
+    text-align: center; /* Centers the title and content */
+}
+
+#academicCredentials h2 {
+    font-size: 2.5rem; /* Larger font size for the section title */
+    color: #007bff; /* Vibrant color for the title */
+    margin-bottom: 50px; /* Space between title and credentials */
+    position: relative; /* Required for pseudo-elements */
+    display: inline-block; /* Aligns pseudo-elements properly */
+    padding-bottom: 15px; /* Space for the underline */
+}
+
+/* Adds a decorative underline to the title */
+#academicCredentials h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Aligns at the bottom of the title */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the underline */
+    width: 50%; /* Width of the underline */
+    height: 3px; /* Thickness of the underline */
+    background-color: #007bff; /* Matches the title color */
+    border-radius: 1px; /* Slightly rounded edges for the underline */
+}
+
+/* Credential Card Styling */
+.credential {
+    background: #ffffff;
+    margin: 0 auto 30px; /* Centers cards and adds space between them */
+    padding: 40px; /* More internal space for each credential */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 80%; /* Controls the width of the credentials to prevent overly wide cards */
+    max-width: 800px; /* Maximum width for very large screens */
+}
+
+.credential h3 {
+    font-size: 1.75rem; /* Increased size for subheadings */
+    color: #0056b3; /* A slightly darker shade for contrast */
+    margin-bottom: 15px; /* Defines space between the title and content */
+    font-weight: 600; /* Adds weight for importance */
+}
+
+.credential p {
+    font-size: 1rem; /* Comfortable reading size */
+    color: #444; /* Dark grey for readability */
+    line-height: 1.6; /* Improved line height for easier reading */
+}
+
+/* Styling for list items, if any, within credentials */
+.credential ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    margin: 10px 0 0; /* Adds a little space above the list */
+}
+
+.credential ul li {
+    padding-left: 20px; /* For custom bullet points or icons */
+    position: relative;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.credential ul li::before {
+    content: '\2022'; /* Unicode character for bullet point */
+    color: #007bff; /* Bullet point color */
+    font-weight: bold; /* Makes bullet points bold */
+    display: inline-block;
+    width: 1em; /* Keeps bullet points aligned */
+    margin-left: -1em; /* Aligns content properly */
+    position: absolute;
+    left: 0;
+}
+
+/* Subtle details for links within credentials */
+.credential a {
+    color: #007bff; /* Link color that matches the theme */
+    text-decoration: none; /* Removes underline */
+}
+
+.credential:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+}
+
+
+
+
+/* Academic Work Experience Enhancements */
+#academicWorkExperience div,
+#professionalSummary {
+    background-color: #f9f9f9; /* Slightly off-white background for distinction */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern card look */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#academicWorkExperience div:hover,
+#professionalSummary:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover for emphasis */
+}
+
+#academicWorkExperience i,
+#professionalSummary i {
+    color: #007bff; /* Icon color matching the section titles */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Larger icon size */
+}
+
+/* Enhancing Text */
+#academicWorkExperience h3,
+#professionalSummary p {
+    color: #333; /* Darker text for better readability */
+    margin-top: 10px;
+}
+
+#academicWorkExperience p,
+#professionalSummary p {
+    text-align: justify; /* Justify text for a neat appearance */
+    text-justify: inter-word;
+    line-height: 1.6; /* Improved line height for easier reading */
+}
+
+/* RentHub Project Section Styling */
+#renthub {
+    margin-top: 50px; /* Add space between projects */
+    padding: 30px; /* Padding for content within the project section */
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* RentHub Project Title Styling */
+#renthub h3 {
+    font-size: 1.8rem; /* Slightly smaller title size */
+    color: #007bff; /* Theme color for consistency */
+    margin-bottom: 20px; /* Space below the title */
+    font-weight: 500; /* Slightly lighter weight for a modern appearance */
+}
+
+/* RentHub Project Description Text Styling */
+#renthub p {
+    font-size: 1.1rem; /* Optimal size for readability */
+    color: #495057; /* Slightly muted for easy reading */
+    line-height: 1.7; /* Enhanced line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+    text-align: justify; /* Ensures the text is evenly justified for a polished look */
+}
+
+/* RentHub Project Image Styling */
+#renthub img {
+    margin-bottom: 20px; /* Space below the image */
+    border-radius: 5px; /* Slight border radius for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Additional Project Details Styling */
+#renthub h3:nth-of-type(2),
+#renthub h3:nth-of-type(3),
+#renthub h3:nth-of-type(4),
+#renthub h3:nth-of-type(5),
+#renthub h3:nth-of-type(6),
+#renthub h3:nth-of-type(7) {
+    font-size: 1.4rem; /* Smaller title size for additional details */
+    color: #343a40; /* Darker color for contrast */
+    margin-top: 30px; /* Space above additional details */
+    font-weight: 500; /* Slightly lighter weight for a modern appearance */
+}
+/* Contact Section Enhancements */
+#contact {
+    background-color: #f8f9fa; /* Maintains a soft background color for contrast */
+    padding: 80px 20px; /* Increases padding for a more spacious layout */
+    text-align: center; /* Ensures content is centered */
+}
+
+/* Form Wrapper for Better Layout Control */
+.form-wrapper {
+    max-width: 600px; /* Sets a max width for the form */
+    margin: auto; /* Centers the form in the section */
+    padding: 40px; /* Adds padding inside the form for a larger appearance */
+    background-color: #ffffff; /* Sets a contrasting background for the form */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+    border-radius: 8px; /* Rounds the corners for a modern, soft look */
+}
+
+/* Enhancing Form Fields and Button */
+.form-control {
+    height: auto; /* Adjusts the height based on content */
+    padding: 15px; /* More padding for a larger feel */
+    font-size: 1rem; /* Keeps font size readable */
+    margin-bottom: 30px; /* Increases space between form elements */
+}
+
+.btn-primary {
+    font-size: 1.1rem; /* Slightly larger font for the button */
+    padding: 10px 30px; /* More substantial padding for a larger button */
+    letter-spacing: 0.05rem; /* Adds letter-spacing for a premium look */
+}
+
+/* Adjusting Label Spacing for Clarity */
+label {
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Makes labels slightly larger for readability */
+    display: block; /* Ensures labels are on their own line */
+    text-align: left; /* Aligns the text to the left for a natural form flow */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+footer p {
+    margin: 0; /* Removes default margin */
+    font-size: 1rem; /* Standard font size */
+}
+
+.social-links {
+    margin-top: 15px; /* Space above social links */
+}
+
+.social-links a {
+    color: #ffffff; /* White color for icons */
+    margin: 0 10px; /* Space between icons */
+    font-size: 1.5rem; /* Size of the social icons */
+    transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #academicWorkExperience div {
+        /* Ensure elements within the section stack vertically */
+        flex-direction: column;
+        align-items: center; /* Center-align the content for a cleaner look */
+        text-align: center; /* Center text for consistency */
+    }
+    /* Adjustments for icon spacing and credential card layout */
+    .credential {
+        margin-bottom: 20px; /* Increase spacing between each credential for clarity */
+    }
+    #academicWorkExperience div,
+    #professionalSummary,
+    #projects > div {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #projects img {
+        width: 75%; /* Adjust image size for medium screens */
+        margin: 0 auto; /* Center images */
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #academicWorkExperience div {
+        /* Continue vertical stacking for small devices */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .credential {
+        margin-bottom: 20px; /* Maintain increased spacing for clarity */
+        width: 90%;
+    }
+
+    #academicWorkExperience div,
+    #professionalSummary,
+    #projects > div {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #projects img {
+        width: 85%; /* Adjust image size for small screens */
+        margin: 20px auto; /* Center images with more margin */
+    }
+
+    /* Ensure content within these sections stacks vertically */
+    #academicWorkExperience,
+    #projects {
+        display: block;
+    }
+
+    .credential,
+    #projects > div {
+        margin-bottom: 20px;
+    }
+
+    #philosophy, #academicCredentials {
+        padding: 40px; /* Further reduced padding for small devices */
+        border-radius: 5px; /* Adjusted border radius for smaller viewports */
+    }
+
+    #philosophy h2, #academicCredentials h2 {
+        font-size: 1.8rem; /* Slightly smaller headings for compact spaces */
+    }
+
+    #philosophy p, #academicCredentials .credential p {
+        font-size: 0.95rem; /* Smaller paragraph text for increased readability */
+    }
+
+    .credential {
+        flex-direction: column; /* Ensure credentials stack vertically */
+        text-align: center;
+    }
+
+    .credential i {
+        margin-bottom: 10px; /* Adjust icon spacing */
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+    #academicWorkExperience div {
+        /* Further enhancements for very small screens */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px; /* Slightly reduce padding inside each work experience card for space efficiency */
+    }
+    .credential {
+        padding: 20px; /* Consistent padding reduction for all credential items */
+        margin-bottom: 20px; /* Ensure there's enough space between stacked items */
+    }
+    #academicWorkExperience div,
+    #professionalSummary,
+    #projects > div {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #projects img {
+        width: 100%; /* Make images full width on extra small devices */
+        margin: 15px auto; /* Adjust margin for images */
+    }
+
+    /* Stacking for very small screens */
+    #academicWorkExperience,
+    #projects {
+        display: block;
+    }
+
+    .credential,
+    #projects > div {
+        margin-bottom: 15px;
+    }
+
+    /* Adjust font sizes for better readability on very small screens */
+    #academicWorkExperience h3, #projects h3, #professionalSummary p {
+        font-size: 1.2rem;
+    }
+
+    #academicWorkExperience p, #projects p, #professionalSummary p {
+        font-size: 0.95rem;
+    }
+    #philosophy, #academicCredentials {
+        padding: 30px; /* Minimal padding to maximize available space */
+        margin-bottom: 20px; /* Adjusted margin for tighter spacing */
+    }
+
+    #philosophy h2, #academicCredentials h2 {
+        font-size: 1.6rem; /* Reduced heading size for very small screens */
+    }
+
+    #philosophy p, #academicCredentials .credential p {
+        font-size: 0.9rem; /* Further reduced paragraph text size for snug fit */
+    }
+
+    .credential {
+        flex-direction: column; /* Stack items vertically for better fit */
+        text-align: center;
+        padding: 20px; /* Adjust padding within each credential for snug fit */
+    }
+
+    .credential i {
+        margin-bottom: 10px; /* Space out the icons from text */
+    }
+}
+
+
+/* Small devices (landscape phones, 576px to 767px) */
+/*@media only screen and (min-width: 576px) and (max-width: 767px) {*/
+/*    #philosophy, #academicCredentials {*/
+/*        padding: 40px; !* Further reduced padding for small devices *!*/
+/*        border-radius: 5px; !* Adjusted border radius for smaller viewports *!*/
+/*    }*/
+
+/*    #philosophy h2, #academicCredentials h2 {*/
+/*        font-size: 1.8rem; !* Slightly smaller headings for compact spaces *!*/
+/*    }*/
+
+/*    #philosophy p, #academicCredentials .credential p {*/
+/*        font-size: 0.95rem; !* Smaller paragraph text for increased readability *!*/
+/*    }*/
+
+/*    .credential {*/
+/*        flex-direction: column; !* Ensure credentials stack vertically *!*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .credential i {*/
+/*        margin-bottom: 10px; !* Adjust icon spacing *!*/
+/*    }*/
+/*}*/
+
+/* Extra small devices (phones, less than 576px) */
+/*@media only screen and (max-width: 575px) {*/
+/*    #philosophy, #academicCredentials {*/
+/*        padding: 30px; !* Minimal padding to maximize available space *!*/
+/*        margin-bottom: 20px; !* Adjusted margin for tighter spacing *!*/
+/*    }*/
+
+/*    #philosophy h2, #academicCredentials h2 {*/
+/*        font-size: 1.6rem; !* Reduced heading size for very small screens *!*/
+/*    }*/
+
+/*    #philosophy p, #academicCredentials .credential p {*/
+/*        font-size: 0.9rem; !* Further reduced paragraph text size for snug fit *!*/
+/*    }*/
+
+/*    .credential {*/
+/*        flex-direction: column; !* Stack items vertically for better fit *!*/
+/*        text-align: center;*/
+/*        padding: 20px; !* Adjust padding within each credential for snug fit *!*/
+/*    }*/
+
+/*    .credential i {*/
+/*        margin-bottom: 10px; !* Space out the icons from text *!*/
+/*    }*/
+/*}*/
+
+
+
